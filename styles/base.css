@@ -82,7 +82,7 @@ main {
 
 }
 
-.card > h1 {
+.card > h2 {
     width: 100%;
     background-color: rgb(14, 74, 194);
     color: #fff;
