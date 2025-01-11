@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", serif;
 }
 
 header {
@@ -20,6 +21,7 @@ main {
 
 h1{
     font-size: 2rem;
+    font-weight: 100;
 }
 
 
@@ -70,35 +72,59 @@ main {
 }
 
 .card {
-    background-color: #f1f1f1;
+    background-color: #fff;
     border: 1px solid gray;
     border-radius: .5rem;
+    justify-items: center;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+
 }
 
-.card > h1, h2 {
-    background-color: rgb(12, 12, 88);
+.card > h1 {
+    width: 100%;
+    background-color: rgb(14, 74, 194);
     color: #fff;
+    border-radius: .5rem .5rem 0rem 0rem;
+    text-align: center;
 }
 
 .card1{
     display: grid;
     grid-template-columns: auto auto;
     padding: 1rem;
+    width: 100%;
 }
 
 .card1 > p {
     /* width: 10rem; */
-    width: 25rem;
+    width: 35rem;
+}
+
+.card2{
+    display: grid;
+    height: 22rem;
+    width: 18rem;
+    align-items: center;
 }
 
 h3 {
-    width: 16rem;
+    /* width: 16rem; */
+    font-size: 2rem;
     border-bottom: 1px solid #36454f;
 }
 
 img {
     border: 1px solid gray;
 }
+
+.text2{
+    width: 36rem;
+    padding-right: 8rem;
+    margin-left: -2rem;
+    /* border: 1px solid red; */
+} 
 
 footer {
     background-color: #bbb;
