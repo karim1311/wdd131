@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images - WDD131</title>
+    <meta name="description" content="This pages shows how to use responsive images with picture html element.">
+    <meta name="author" content="Karim Valenzuela"> 
+    <link rel="stylesheet" href="./styles/responsive-images.css">
+    <script src="./functions.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <pciture>
+                <source media="(min-width: 1000px)" srcset="./images/hero-large.webp">
+                <source media="(min-width: 500px)" srcset="./images/hero-medium.webp">
+                <img src="./images/hero-small.webp" alt="Landscape" width="1500" height="750">
+            </pciture>
+        </div>
+        <p id="fullName"></p>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <meta name="description" content="this page will use responsive web design and DOM manipulation">
+    <meta name="author" content="Karim Valenzuela">
+    <link rel="stylesheet" href="./styles/place.css">
+    <script src="./scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Mexico</h1>
+    </header>
+    <main>
+        <section class="container">
+            <div class="hero">
+                <picture>
+                    <source media="(min-width:900px)" srcset="./images/mazatlan-hero-large.webp">
+                    <source media="(min-width:1400px)" srcset="./images/mazatlan-hero-larger.webp">
+                    <img src="./images/mzt-vertical.webp" alt="Rocky coast infront of a body of water." >
+                </picture>
+            </div>
+            <article class="data">
+                <h2>Data</h2>
+                <p><strong>Area:</strong> 1,972,550 sq km</p>
+                <p><strong>Population:</strong> 126,014,024</p>
+                <p><strong>Capital:</strong> Mexico City</p>
+                <p><strong>Languages:</strong> Spanish, Indigenous(68)</p>
+                <p><strong>Currency:</strong> Mexican Peso</p>
+                <p><strong>Time Zone:</strong> UTC-5 to UTC-8</p>
+                <p><strong>Calling Code:</strong> +52</p>
+                <p><strong>Internet TLD:</strong> .mx</p>
+            </article>
+            <article class="weather">
+                <h2 class="icon">Weather</h2>
+                <p class=""></p>
+                <p class=""><strong>Temperature:</strong> 10 °C</p>
+                <p><strong>Conditions:</strong> Partly cloudy</p>
+                <p><strong>Wind:</strong> 5km/h</p>
+                <p><strong>Wind Chill:</strong> 9.8°C</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> Karim Valenzuela Sinaloa, México.</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

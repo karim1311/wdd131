@@ -1,0 +1,145 @@
+:root{
+    --green:#006341;
+    --white:#FFFFFF;
+    --red: #C8102E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto,sans-serif;
+}
+
+header{
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 2.5rem;
+    display: grid;
+    padding: 1.2rem;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 2rem solid var(--white);
+}
+
+
+h2{
+    padding: 1rem;
+    font-size:xx-large;
+}
+
+main{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+}
+
+.hero{
+    border-top: 1rem var(--white);
+    border-bottom: 1rem var(--red);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+article{
+    display: grid;
+}
+
+article > p{
+    margin: 0 auto;
+    padding: .5rem;
+}
+.weather > h2{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    /* width: 14rem; */
+    /* height: 4rem; */
+    align-items: center;
+}
+.icon::after{
+    content: url('/images/1530391_weather_clouds_sun_sunny_icon.svg');
+    width: 100px;
+    height: 100px;
+}
+
+
+
+footer {
+    background-color: var(--red);
+    color: var(--white);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgba(0 0 0 / 0.1);
+}
+
+@media only screen and (min-width:40em){
+    .hero{ 
+        display: none;
+    } 
+
+    .container{
+       background-image: url("/images/mazatlan-hero-larger.webp");
+       background-size: cover;
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: 1fr 1fr;
+       /* padding: 1rem; */
+       /* gap: 1rem; */
+       justify-content: center;
+       padding-top: 7rem;
+       padding-bottom: 6rem;
+    }
+
+    h2{
+        background-color: var(--green);
+        color:  var(--white);
+        justify-content: left;
+    }
+
+    article {
+        background-color: var(--white);
+        max-width: 23rem;
+        opacity: .8;
+        box-shadow: 0 0 1.5rem #333;
+        text-align: left;
+        justify-content: center;
+    }
+
+    article > p {
+        display: block;
+        /* text-align: center; */
+    }
+
+
+    .weather{
+        /* display: block; */
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+
+    .weather > h2{
+        display: flex;
+        flex-direction: row;
+        width: 14rem;
+        height: 4rem;
+        align-items: center;
+    }
+    .icon::after{
+        content: url('/images/1530391_weather_clouds_sun_sunny_icon.svg');
+        width: 50px;
+        height: 50px;
+    }
+
+}
