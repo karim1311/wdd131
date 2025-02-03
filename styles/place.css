@@ -89,8 +89,11 @@ footer {
         display: none;
     } 
 
+    main{
+        background-image: url("../images/mazatlan-hero-larger.webp");
+    }
+
     .container{
-       background-image: url("../images/mazatlan-hero-larger.webp");
        background-size: cover;
        display: grid;
        grid-template-columns: 1fr 1fr 1fr;
