@@ -85,12 +85,13 @@ footer {
 }
 
 @media only screen and (min-width:40em){
-    .hero{ 
-        display: none;
-    } 
-
-    main{
-        background-image: url("../images/mazatlan-hero-larger.webp");
+    img{
+        position: absolute;
+        top: 14%;
+        left: 0;
+        right: 0;
+        max-height: 50rem;
+        padding-bottom: 1rem;
     }
 
     .container{
@@ -99,8 +100,10 @@ footer {
        grid-template-columns: 1fr 1fr 1fr;
        grid-template-rows: 1fr 1fr;
        justify-content: center;
-       padding-top: 7rem;
-       padding-bottom: 6rem;
+    }
+
+    footer{
+        margin-top: 6rem;
     }
 
     h2{
@@ -141,6 +144,11 @@ footer {
         content: url('/images/1530391_weather_clouds_sun_sunny_icon.svg');
         width: 50px;
         height: 50px;
+    }
+
+    .data{
+        grid-column-start: 1;
+        grid-row-start: 1;
     }
 
 }
