@@ -87,6 +87,22 @@ const temples = [
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/hermosillo-sonora-mexico/400x250/hermosillo-sonora-mexico-temple-1360031-wallpaper.jpg"
     },
+    {
+      templeName: "Concepción Chile",
+      location: "Concepción, Chile",
+      dedicated: "2018, October, 28",
+      area: 23095,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/concepcion-chile/2018/400x250/01-Concepcion-Chile-Temple-2113673.jpg"
+    },
+    {
+      templeName: "Mesa Arizona",
+      location: "Mesa, Arizona, United States",
+      dedicated: "1927, October, 23-26",
+      area: 75000,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mesa-arizona/400x250/mesa_arizona_temple_main.jpeg"
+    },
     // Add more temple objects here...
   ];
 
