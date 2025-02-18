@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Form with confirmation page, using Javascript">
+<meta name="author" content="Karim Valenzuela">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Product Review Form</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<!-- <link href="./styles/siteplan.css" rel="stylesheet"> -->
+<link href="./styles/form.css" rel="stylesheet">
+<script src="./scripts/form.js" defer></script>
+</head>
+<body>
+<!-- HEADER HERE -->
+<header>
+    <h1>Cool Songs</h1>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="siteplan.html" id="home">Home</a></li>
+            <li><a href="siteplan.html" id="new">Popular Songs</a></li>
+            <li><a href="recommendations.html" id="old">Recommendations</a></li>
+            <li><a href="form.html" id="small">Your songs</a></li>
+        </ul>
+    </nav>
+
+</header>
+    
+    
+<!-- CONTENT HERE -->
+<main>
+    <h2>Your Favorite Songs</h2>
+    <form method="get" action="review.html" class="wf1">
+        <fieldset>
+            <label>Product Name
+                <select name="productName" id="productName">
+                        <option value="" disabled selected>Please Select &#9662</option>
+                    <!-- <option value="software">Software Development</option>
+                    <option value="creative">Creative Profesional</option> -->
+                </select>
+            </label>
+            <!-- <label for="">Product Name* <input type="text" name="fname" required></label> -->
+            <div><label>Overall Rating*</label></div>
+            <div class="star-rating">
+                <input type="radio" name="stars" id="star-a" value="5" required/>
+                <label for="star-a"></label>
+        
+                <input type="radio" name="stars" id="star-b" value="4" required />
+                <label for="star-b"></label>
+            
+                <input type="radio" name="stars" id="star-c" value="3" required />
+                <label for="star-c"></label>
+            
+                <input type="radio" name="stars" id="star-d" value="2" required />
+                <label for="star-d"></label>
+            
+                <input type="radio" name="stars" id="star-e" value="1" required />
+                <label for="star-e"></label>
+            </div>
+          
+            <label>Date of Installation*<input type="date" id="installationDate" name="installationDate" required></label>
+            <div>Which features did you find useful in the product?</div>
+            <p>(Check all that apply)</p>
+            <label><input type="checkbox" id="durability" name="durability" value="Durability"> Durability</label>
+            <label><input type="checkbox" id="easeofuse" name="easeofuse" value="Ease of use"> Ease of use</label>
+            <label><input type="checkbox" id="performance" name="performance" value="Performance"> Performance</label>
+            <label><input type="checkbox" id="design" name="Design" value="Design"> Design</label>
+            <label for="">Written Review <p>(Optional)</p><textarea name="writreview" id="writreview"></textarea></label>
+            <label for="">Your Name <p>(Optional)</p><input type="text" id="fname" name="fname"></label>
+        </fieldset>
+        
+        <input type="submit" value="Post Review">
+
+    </form>
+        
+
+          
+        
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        <p><span id="currentyear"></span> Karim Valenzuela Sinaloa, México.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

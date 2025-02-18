@@ -122,19 +122,6 @@ home.addEventListener("click",()=>{
 //     createTempleCard(temples.filter(temple=>Number(temple.release.substring(0,4))<1900))
 // })
 
-// newLink.addEventListener("click",()=>{
-//     createTempleCard(temples.filter(temple=>Number(temple.dedicated.substring(0,4))>2000))
-// })
-
-// large.addEventListener("click",()=>{
-//     createTempleCard(temples.filter(temple=>temple.area>90000))
-// })
-
-// small.addEventListener("click",()=>{
-//     createTempleCard(temples.filter(temple=>temple.area<10000))
-// })
-
-
 function createSongCard(filteredSongs){
     document.querySelector(".container").innerHTML = ""
     filteredSongs.forEach(song=>{
